@@ -17,21 +17,24 @@ Réalisation d'une application pour créer un cv en ligne.
 `django-admin startproject zvitae .`
 
 6.1 - Configuration de la base de données dans le fichier setting
-6.2 - Création du super utilisateur
+6.2 - Init bdd : `python manage.py makemigrations` & `python manage.py migrate`
+6.3 - Création du super utilisateur : zvitadmin & baptiste.couble@free.fr
 
 7 - Création d'un dossier apps qui contiendra les application du projet
 
-8 - Création de la première application 'core'
-`python manage.py startapp core ./ayomi/apps/core`
+8.1 - Création du dossier "core" pour l'app
+8.2 - Création de la première application 'core'
+`python manage.py startapp core ./zvitae/apps/core`
 
-9 - Création de la deuxième application 'register'
-`python manage.py startapp register ./ayomi/apps/register`
+9.1 - Création du dossier "register" pour l'app
+9.2 - Création de la deuxième application 'register'
+`python manage.py startapp register ./zvitae/apps/register`
 
 10 - Mise à jour de 'DIRS' dans TEMAPLATE du fichier setting.py
 
 11 - Import des fichiers statics dans l'application core
 
-12 - Tests pour l'application regiter
+12 - Tests pour l'application register
 
 13 - Fixe l'application register
 
