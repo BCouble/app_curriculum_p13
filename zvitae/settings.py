@@ -9,8 +9,14 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
+import os, sys
 
 from pathlib import Path
+
+PROJECT_DIR = os.path.dirname(os.path.realpath(__file__))
+ROOT_DIR = os.path.dirname(PROJECT_DIR)
+APPS_DIR = os.path.realpath(os.path.join(ROOT_DIR, 'apps'))
+sys.path.append(APPS_DIR)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,7 +37,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'zvitae.apps.Core.apps.CoreConfig',
+    'zvitae.apps.core.apps.CoreConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

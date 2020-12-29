@@ -28,8 +28,9 @@ Réalisation d'une application pour créer un cv en ligne.
 
 9.1 - Configuration 'DIRS' dans TEMAPLATE du fichier setting.py
 9.2 - Add app core in INSTALLED_APPS
-9.3 - Create urls.py 
-
+9.3 - Creation urls.py 
+9.4 - Creation de la base du template à la racine du projet
+ 
 10.1 - Création du dossier "register" pour l'app
 10.2 - Création de la deuxième application 'register'
 `python manage.py startapp register ./zvitae/apps/register`
@@ -42,8 +43,8 @@ Réalisation d'une application pour créer un cv en ligne.
 
 14.1 - Création du dossier zvitae
 14.2 - Création de la troisième application 'manage_zvitae'
-`python manage.py startapp manage_zvitae ./ayomi/apps/manage_zvitae`
+`python manage.py startapp manage_zvitae ./zvitae/apps/manage_zvitae`
 
-15 - Testspour l'application manage_zvitae
+15 - Tests pour l'application manage_zvitae
 
 16 - Fixe l'application zvitae
